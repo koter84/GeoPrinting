@@ -2,6 +2,7 @@
 // @name         GeoPrinting
 // @version      2.0.0
 // @namespace    http://denniskoot.nl
+// @license      GPLv3
 // @description  Make a better looking print-page on geocaching.com from the normal cache page
 // @include      http://www.geocaching.com/geocache/*
 // ==/UserScript==
