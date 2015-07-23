@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.3
+// @version      2.0.4
 // @author       Dennis Koot
 // @copyright    2015, Dennis Koot
 // @namespace    http://denniskoot.nl
@@ -25,6 +25,9 @@ function setupGeoPrinting()
 
 		// hide the navigation
 		$('#Navigation').hide();
+
+		// hide the send_mail_to_owner block
+		$('.message__owner').hide();
 
 		// hide the print and download links
 		$('.DownloadLinks').hide();
