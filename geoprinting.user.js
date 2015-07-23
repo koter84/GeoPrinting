@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name         GeoPrinting
 // @version      2.0.0
+// @oujs:author  koter84
+// @copyright    2015, Dennis Koot
 // @namespace    http://denniskoot.nl
 // @license      GPLv3
 // @description  Make a better looking print-page on geocaching.com from the normal cache page
