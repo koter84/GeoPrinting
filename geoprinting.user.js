@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.1
+// @version      2.0.2
 // @author       Dennis Koot
 // @copyright    2015, Dennis Koot
 // @namespace    http://denniskoot.nl
@@ -97,7 +97,7 @@ function setupGeoPrinting()
 		if($('.UserSuppliedContent').find("img").length > 0)
 		{
 			//found an image add the "Hide Image" link
-			$('.Disclaimer').append($('<a href="#">Hide/Show Image(s)</a>').click(function (e) {
+			$('.Disclaimer').append($('<a href="#">Show/Hide Image(s)</a>').click(function (e) {
 				e.preventDefault();
 				$(".UserSuppliedContent").find("img").toggle();
 			}));
@@ -106,7 +106,7 @@ function setupGeoPrinting()
 
 		// add Show/Hide Waypoints
 		$("#ctl00_ContentBody_WaypointsInfo").parent().css('margin', '15px 0 5px 0');
-		$('.Disclaimer').append($('<a href="#">Hide/Show Waypoint(s)</a>').click(function (e) {
+		$('.Disclaimer').append($('<a href="#">Show/Hide Waypoint(s)</a>').click(function (e) {
 			e.preventDefault();
 			$("#ctl00_ContentBody_WaypointsInfo").parent().toggle();
 			$("#ctl00_ContentBody_Waypoints").toggle();
@@ -114,7 +114,7 @@ function setupGeoPrinting()
 		$('.Disclaimer').append('&nbsp;&nbsp;');
 
 		// add Show/Hide Logcounts
-		$('.Disclaimer').append($('<a href="#">Hide/Show Logcounts</a>').click(function (e) {
+		$('.Disclaimer').append($('<a href="#">Show/Hide Logcounts</a>').click(function (e) {
 			e.preventDefault();
 			$('.InformationWidget').toggle();
 		}));
