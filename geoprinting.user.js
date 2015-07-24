@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.4
+// @version      2.0.5
 // @author       Dennis Koot
 // @copyright    2015, Dennis Koot
 // @namespace    http://denniskoot.nl
@@ -19,6 +19,9 @@ function setupGeoPrinting()
 		// remove the print-media css-file
 		$('link[media="print"]').remove();
 		$('link[media="screen"]').attr('media', 'all');
+
+		// hide background images
+		$('body').attr('background', '');
 
 		// hide the siteHeader
 		$('#ctl00_siteHeader').hide();
@@ -88,7 +91,7 @@ function setupGeoPrinting()
 		$('footer').hide();
 
 		// remove <br/>
-		$('br').remove();
+//		$('br').remove();
 
 		// create a no-geoprint class to show some elements except when printed
 		$('head').append('<style>@media print { .no-geoprint { display: none !important; } }</style>');
