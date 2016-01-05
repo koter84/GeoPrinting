@@ -3,3 +3,5 @@ this repository will contain userscripts made by me, below you can find short de
 
 ## GeoPrinting
 Userscript for building a better print-page on GeoCaching.com, install from [OpenUserJS.org](https://openuserjs.org/scripts/koter84/GeoPrinting) or [GreasyFork.org](https://greasyfork.org/scripts/15945-geoprinting)
+
+![Screenshot](https://github.com/koter84/UserScripts/raw/master/geoprinting.screenshot.png "Screenshot")
