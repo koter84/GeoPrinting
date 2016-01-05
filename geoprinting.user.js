@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.6
+// @version      2.0.7
 // @author       Dennis Koot
-// @copyright    2015, Dennis Koot
+// @copyright    2016, Dennis Koot
 // @namespace    https://denniskoot.nl
 // @license      GPLv3
 // @description  Make a better looking print-page on geocaching.com from the normal cache page
@@ -22,6 +22,11 @@ function setupGeoPrinting()
 
 		// hide background images
 		$('body').attr('background', '');
+
+		// all text in black
+		$('body').css('color', '#000000');
+		$('font').css('color', '#000000');
+		$('h1, h2, h3, h4, h5, h6').css('color', '#000000');
 
 		// hide the siteHeader
 		$('#ctl00_siteHeader').hide();
@@ -73,6 +78,7 @@ function setupGeoPrinting()
 		$('.BottomSpacing').css('margin-bottom', '0');
 		$('.CacheInformationTable').css('margin', '0');
 		$('.CacheDescriptionHeader').css('margin', '5px 0 0 0');
+		$('.CacheDetailsPage #Content .container').css('margin-bottom', '0px');
 
 		// hide the additional hints decryption key
 		$('#dk').hide();
