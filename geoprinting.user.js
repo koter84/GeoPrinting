@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.5
+// @version      2.0.6
 // @author       Dennis Koot
 // @copyright    2015, Dennis Koot
-// @namespace    http://denniskoot.nl
+// @namespace    https://denniskoot.nl
 // @license      GPLv3
 // @description  Make a better looking print-page on geocaching.com from the normal cache page
-// @include      http://www.geocaching.com/geocache/*
-// @include      http://www.geocaching.com/seek/cache_details.aspx*
+// @include      https://www.geocaching.com/geocache/*
+// @include      https://www.geocaching.com/seek/cache_details.aspx*
 // @grant        none
 // @oujs:author  koter84
 // ==/UserScript==
@@ -154,7 +154,7 @@ function setupGeoPrinting()
 
 //var jQueryGeoPrinting = document.createElement("script");
 //jQueryGeoPrinting.setAttribute("type", "text/javascript");
-//jQueryGeoPrinting.setAttribute("src", "http://code.jquery.com/jquery-latest.js");
+//jQueryGeoPrinting.setAttribute("src", "https://code.jquery.com/jquery-latest.js");
 //document.body.appendChild(jQueryGeoPrinting);
 
 var injectGeoPrinting = document.createElement("script");
