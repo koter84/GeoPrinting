@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.7
+// @version      2.0.8
 // @author       Dennis Koot
-// @copyright    2016, Dennis Koot
+// @copyright    2018, Dennis Koot
 // @namespace    https://denniskoot.nl
-// @license      GPLv3
+// @license      GPL-3.0+; http://www.gnu.org/licenses/gpl-3.0.txt
 // @description  Make a better looking print-page on geocaching.com from the normal cache page
 // @include      https://www.geocaching.com/geocache/*
 // @include      https://www.geocaching.com/seek/cache_details.aspx*
@@ -32,7 +32,7 @@ function setupGeoPrinting()
 		$('#ctl00_siteHeader').hide();
 
 		// hide the navigation
-		$('#Navigation').hide();
+		$('#gcNavigation').hide();
 
 		// hide the send_mail_to_owner block
 		$('.message__owner').hide();
