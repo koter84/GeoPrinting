@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GeoPrinting
-// @version      2.0.8
+// @version      2.0.9
 // @author       Dennis Koot
 // @copyright    2018, Dennis Koot
 // @namespace    https://denniskoot.nl
@@ -14,7 +14,7 @@
 
 function setupGeoPrinting() 
 {
-	doGeoPrinting = function(newValue)
+	doGeoPrinting = function()
 	{
 		// remove the print-media css-file
 		$('link[media="print"]').remove();
@@ -70,7 +70,7 @@ function setupGeoPrinting()
 
 		// move GC-code a little bit down 
 		$('#ctl00_ContentBody_CoordInfoLinkControl1_uxCoordInfoLinkPanel').css('position', 'relative');
-		$('#ctl00_ContentBody_CoordInfoLinkControl1_uxCoordInfoLinkPanel').css('top', '50px')
+		$('#ctl00_ContentBody_CoordInfoLinkControl1_uxCoordInfoLinkPanel').css('top', '50px');
 		$('#ctl00_ContentBody_CoordInfoLinkControl1_uxCoordInfoLinkPanel').css('margin-top', '-50px');
 
 		// smaller margins so more fits on one page
@@ -115,7 +115,7 @@ function setupGeoPrinting()
 				$(".UserSuppliedContent").find("img").toggle();
 			}));
 			$('.Disclaimer').append('&nbsp;&nbsp;');
-		};
+		}
 
 		// add Show/Hide Waypoints
 		$("#ctl00_ContentBody_WaypointsInfo").parent().css('margin', '15px 0 5px 0');
@@ -146,7 +146,7 @@ function setupGeoPrinting()
 		}));
 
 		$('.Disclaimer').show();
-	}
+	};
 
 	// insert a GeoPrint-link non-intrusive-style :D
 	$('#ctl00_ContentBody_lnkPrintFriendly').after(
